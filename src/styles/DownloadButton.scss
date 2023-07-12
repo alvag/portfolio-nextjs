@@ -1,0 +1,17 @@
+.download-btn {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+
+  &__link {
+    border: 2px solid var(--color-primary);
+    padding: 1.3rem 3rem;
+    border-radius: 3.2rem;
+    box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-secondary);
+    }
+  }
+}

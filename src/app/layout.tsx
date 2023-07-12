@@ -25,7 +25,9 @@ export default function RootLayout( {
         <html lang="es">
         <body className={ poppins.className }>
         <div className="layout">
-            <Sidebar/>
+            <div className="layout__aside">
+                <Sidebar/>
+            </div>
             <main className="layout__content">
                 { children }
             </main>
