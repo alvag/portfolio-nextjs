@@ -1,6 +1,10 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import './reset.scss';
+import './globals.scss';
+import './variables.scss';
+import './layout.scss';
+import type { Metadata } from 'next';
+import { Poppins } from 'next/font/google';
+import { Sidebar } from '@/components';
 
 const poppins = Poppins( {
     weight: [ '100', '200', '300', '400', '500', '600', '700', '800', '900' ],
@@ -8,8 +12,8 @@ const poppins = Poppins( {
 } )
 
 export const metadata: Metadata = {
-    title: 'Max Alva - Web Developer',
-    description: 'Desarrollador web especializado en Angular, Reactjs, Nextjs',
+    title: 'Max Alva - Desarrollador Frontend',
+    description: 'Desarrollador especializado en Angular, Reactjs, Nextjs',
 }
 
 export default function RootLayout( {
@@ -19,7 +23,17 @@ export default function RootLayout( {
 } ) {
     return (
         <html lang="es">
-        <body className={ poppins.className }>{ children }</body>
+        <body className={ poppins.className }>
+        <div className="layout">
+            <div className="layout__aside">
+                <Sidebar/>
+            </div>
+            <main className="layout__content">
+                { children }
+            </main>
+        </div>
+
+        </body>
         </html>
     )
 }

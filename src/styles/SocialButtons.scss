@@ -1,0 +1,32 @@
+.social-links {
+  margin-bottom: 3.6rem;
+
+  &__list {
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    width: 5rem;
+    height: 5rem;
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    border-radius: 50%;
+    transition: all 300ms linear;
+
+    &:hover {
+      opacity: 1;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &__link {
+  }
+
+
+}

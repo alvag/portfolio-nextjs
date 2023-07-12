@@ -1,0 +1,23 @@
+.layout {
+  position: relative;
+  width: min(80%, 1290px);
+  height: 80vh;
+  min-height: 80vh;
+  margin: 10vh auto;
+  display: grid;
+  grid-template-areas: "aside content";
+  grid-template-columns: 30% 70%;
+  border-radius: 4rem;
+  box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25);
+
+  &__aside {
+    grid-area: aside;
+  }
+
+  &__content {
+    grid-area: content;
+    background-color: var(--color-secondary);
+    border-radius: 0 4rem 4rem 0;
+  }
+}
+

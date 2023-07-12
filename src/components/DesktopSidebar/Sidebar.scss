@@ -1,0 +1,18 @@
+.aside-wrapper {
+  height: 100%;
+  border-radius: 4rem 0 0 4rem;
+  overflow: auto;
+  overflow-x: hidden;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100%;
+    min-width: 30rem;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+  }
+
+}
