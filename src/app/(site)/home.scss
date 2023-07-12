@@ -1,0 +1,21 @@
+.home-page {
+  background-color: var(--color-primary);
+  border-radius: 4rem;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__name {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  &__job {
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: var(--color-subtitle);
+  }
+}

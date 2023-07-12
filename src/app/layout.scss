@@ -17,6 +17,8 @@
 
   &__content {
     grid-area: content;
+    background-color: var(--color-secondary);
+    border-radius: 0 4rem 4rem 0;
   }
 }
 
