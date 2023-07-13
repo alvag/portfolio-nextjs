@@ -5,6 +5,7 @@ import './layout.scss';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import { Sidebar } from '@/components';
+import { Menu } from '@/components/Menu/Menu';
 
 const poppins = Poppins( {
     weight: [ '100', '200', '300', '400', '500', '600', '700', '800', '900' ],
@@ -27,6 +28,9 @@ export default function RootLayout( {
         <div className="layout">
             <div className="layout__aside">
                 <Sidebar/>
+            </div>
+            <div className="layout__responsive-menu">
+                <Menu/>
             </div>
             <main className="layout__content">
                 { children }

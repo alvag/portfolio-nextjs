@@ -1,9 +1,9 @@
 .menu {
   position: absolute;
-  top: 0;
-  right: -105px;
+  top: 10px;
+  right: 0;
   background-color: var(--color-transparent);
-  min-width: 11rem;
+  min-width: 8rem;
 
   &__list {
     display: flex;
@@ -13,7 +13,7 @@
     position: relative;
     background-color: var(--color-primary);
     width: 60%;
-    min-height: 32rem;
+    min-height: 11rem;
     box-shadow: 0 0 3rem -0.5rem rgba(0, 0, 0, 0.15);
     border-radius: 5rem;
     padding: 2rem 0;
@@ -24,21 +24,11 @@
     display: block;
     width: 100%;
     text-align: center;
-
-    &:hover {
-      .menu__overlay {
-        opacity: 1;
-        right: 100%;
-      }
-    }
-  }
-
-  &__link {
   }
 
   &__icon {
     color: var(--color-icon);
-    font-size: 2.8rem;
+    font-size: 2rem;
     transition: all 0.3s ease-in-out;
 
     &:hover {
@@ -57,5 +47,28 @@
     color: var(--color-primary);
     padding: 0.5rem 1rem;
     transition: all 0.3s ease-in-out;
+  }
+
+  @media (min-width: 992px) {
+    top: 0;
+    right: -105px;
+    min-width: 11rem;
+
+    &__list {
+      min-height: 13rem;
+    }
+
+    &__option {
+      &:hover {
+        .menu__overlay {
+          opacity: 1;
+          right: 100%;
+        }
+      }
+    }
+
+    &__icon {
+      font-size: 2.8rem;
+    }
   }
 }

@@ -1,9 +1,9 @@
 .download-btn {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 4rem;
 
   &__link {
-    border: 2px solid var(--color-primary);
+    border: 2px solid var(--color-secondary);
     padding: 1.3rem 3rem;
     border-radius: 3.2rem;
     box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
@@ -12,6 +12,10 @@
     &:hover {
       background-color: var(--color-primary);
       color: var(--color-secondary);
+    }
+
+    @media (min-width: 992px) {
+      border: 2px solid var(--color-primary);
     }
   }
 }

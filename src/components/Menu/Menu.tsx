@@ -18,24 +18,24 @@ export const Menu = () => {
                         <span className="menu__overlay">Sobre mi</span>
                     </Link>
                 </li>
-                <li className="menu__option">
+                {/*<li className="menu__option">
                     <Link href="/estudios" prefetch className="menu__link">
                         <FaGraduationCap className="menu__icon"/>
                         <span className="menu__overlay">Estudios</span>
                     </Link>
-                </li>
-                <li className="menu__option">
+                </li>*/ }
+                {/*<li className="menu__option">
                     <Link href="/portafolio" prefetch className="menu__link">
                         <FaBriefcase className="menu__icon"/>
                         <span className="menu__overlay">Portafolio</span>
                     </Link>
-                </li>
-                <li className="menu__option">
+                </li>*/ }
+                {/*<li className="menu__option">
                     <Link href="/contacto" prefetch className="menu__link">
                         <FaEnvelope className="menu__icon"/>
                         <span className="menu__overlay">Contacto</span>
                     </Link>
-                </li>
+                </li>*/ }
             </ul>
         </nav>
     );
