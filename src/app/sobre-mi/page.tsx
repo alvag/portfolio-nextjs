@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import './about.scss';
 import { AboutMe } from '@/app/sobre-mi/components/AboutMe';
+import { Footer } from '@/components/Footer/Footer';
 
 interface AboutProps {
 }
@@ -13,6 +14,8 @@ const AboutPage: FC<AboutProps> = ( {} ) => {
             </header>
 
             <AboutMe/>
+
+            <Footer/>
         </div>
     );
 };

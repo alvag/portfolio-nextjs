@@ -10,9 +10,14 @@
     align-items: center;
     text-align: center;
     min-height: 100%;
-    min-width: 30rem;
-    background-color: var(--color-secondary);
+    //min-width: 30rem;
     color: var(--color-primary);
+  }
+
+  @media (min-width: 992px) {
+    &__section {
+      min-width: 25rem;
+    }
   }
 
 }

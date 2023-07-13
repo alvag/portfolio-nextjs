@@ -6,7 +6,7 @@
   align-items: center;
 
   &__name {
-    font-size: 6rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     font-weight: 500;
   }
@@ -15,5 +15,20 @@
     font-size: 2.1rem;
     font-weight: 400;
     color: var(--color-subtitle);
+  }
+
+  @media (min-width: 768px) {
+
+    &__name {
+      font-size: 6rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .footer,
+    .download-btn,
+    .social-links {
+      display: none
+    }
   }
 }
