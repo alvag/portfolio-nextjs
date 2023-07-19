@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "server": "http-server ./_static -p 80"
+    "lint": "next lint"
   },
   "dependencies": {
     "@types/node": "20.4.1",
@@ -15,7 +14,6 @@
     "@types/react-dom": "18.2.6",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
-    "http-server": "^14.1.1",
     "next": "13.4.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
