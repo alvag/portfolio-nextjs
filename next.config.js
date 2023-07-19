@@ -2,9 +2,13 @@
 const path = require('path');
 
 const nextConfig = {
-    // output: "standalone",
+    output: "export",
+    distDir: "_static",
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
+    },
+    images: {
+        unoptimized: true
     }
 }
 
