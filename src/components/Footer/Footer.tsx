@@ -7,7 +7,7 @@ export const Footer = () => {
             Hecho con <FaHeart/> usando <a href="https://nextjs.org/"
                                            rel="noreferrer"
                                            target="_blank">
-            NEXT.js
+            NEXT.js!
         </a>
         </footer>
     );
