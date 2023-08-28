@@ -26,9 +26,11 @@ jobs:
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rlgoDzvc -i --delete"
-          SOURCE: "/src"
+          SOURCE: ".next/, /node_modules/"
           REMOTE_HOST: ${{ vars.REMOTE_HOST }}
           REMOTE_USER: ${{ vars.REMOTE_USER }}
           TARGET: ${{ vars.TARGET_DIR }}
-          EXCLUDE: "/node_modules/"
+          #EXCLUDE: "/node_modules/"
+          SCRIPT_AFTER: |
+            npm start
 
