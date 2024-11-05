@@ -7,17 +7,17 @@ interface AboutProps {
 }
 
 const AboutPage: FC<AboutProps> = ( {} ) => {
-    return (
-        <div className="about-page">
-            <header className="about-page__header">
-                <h2 className="about-page__title">Sobre <span>mí</span></h2>
-            </header>
+	return (
+		<div className="about-page">
+			<header className="about-page__header">
+				<h2 className="about-page__title">Sobre <span>mí</span></h2>
+			</header>
 
-            <AboutMe/>
+			<AboutMe/>
 
-            <Footer/>
-        </div>
-    );
+			<Footer/>
+		</div>
+	);
 };
 
 export default AboutPage;
