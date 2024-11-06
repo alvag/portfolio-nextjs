@@ -4,6 +4,7 @@ import './variables.scss';
 import './layout.scss';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Sidebar } from '@/components';
 import { Menu } from '@/components/Menu/Menu';
 
@@ -34,6 +35,7 @@ export default function RootLayout( {
 			</div>
 			<main className="layout__content">
 				{children}
+				<SpeedInsights/>
 			</main>
 		</div>
 
